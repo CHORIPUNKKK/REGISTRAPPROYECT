@@ -1,0 +1,15 @@
+<ion-content [fullscreen]="true">
+  <div id="imagenCamaraContainer" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); display: none;">
+    <div id="imagenCamaraCard" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgb(29, 29, 29); padding: 20px; display: none; text-align: center;">
+      <p style="font-family: Impact; font-size: 50px; color: white;">Se ha REGISTRADO en la ASISTENCIA correctamente</p>
+    <img src="./../../../assets/img/QR.png" alt="QR Code" style="width: 250px; height: 250px;">
+    <br>
+    <button id="botonVolver" (click)="irAlumno()" style="background-color: white; border: 2px solid black; color: black; padding: 10px 20px; font-size: 16px; margin-top: 20px; border-radius: 20px;">Volver al Inicio</button>
+    </div>
+  </div>
+  <div style="position: relative;">
+    <img src="../../../assets/img/camara.jpg" alt="Imagen de la cámara" id="imagenCamara" style="width: 100%; height: auto;">
+    <button id="botonMostrarImagen" (click)="mostrarImagen()" class="invisible-button" style="position: absolute; height: 70px; bottom: 70px; left: 50%; transform: translateX(-50%);">Mostrar Imagen</button>
+  </div>
+  
+</ion-content>

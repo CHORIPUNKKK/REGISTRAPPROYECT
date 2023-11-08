@@ -1,0 +1,28 @@
+<ion-content [fullscreen]="true">
+  <div class="icon-container" (click)="irMenu()">
+    <ion-icon name="arrow-back-sharp"></ion-icon>
+  </div>
+  <div class="tabla-container">
+    <table class="tabla-alumnos">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Carrera</th>
+          <th>Semestre</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let alumno of alumnos">
+          <td>{{ alumno.id }}</td>
+          <td>{{ alumno.nombre }}</td>
+          <td>{{ alumno.carrera }}</td>
+          <td>{{ alumno.semestre }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="boton-container">
+      <button id="generarQR" (click)="irAConectarDisp()">Generar Código QR</button>
+    </div>
+  </div>
+</ion-content>

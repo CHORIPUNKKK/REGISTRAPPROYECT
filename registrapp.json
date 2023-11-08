@@ -1,0 +1,78 @@
+{
+  "Alumnos": [
+    {
+      "id": 1001,
+      "nombre": "Chupete suazo",
+      "carrera": "Analista Programador",
+      "semestre": "4"
+    },
+    {
+      "id": 1002,
+      "nombre": "Patan Legends",
+      "carrera": "Analista Programador",
+      "semestre": "4"
+    },
+    {
+      "id": 1003,
+      "nombre": "Papu Gomez",
+      "carrera": "Analista Programador",
+      "semestre": "4"
+    },
+    {
+      "id": 1004,
+      "nombre": "Pablo Chicle",
+      "carrera": "Analista Programador",
+      "semestre": "4"
+    },
+    {
+      "id": 1005,
+      "nombre": "Choripunk",
+      "carrera": "Analista Programador",
+      "semestre": "4"
+    },
+    {
+      "id": 1006,
+      "nombre": "Cristiano Bonaldo",
+      "carrera": "Analista Programador",
+      "semestre": "4"
+    },
+    {
+      "id": 1007,
+      "nombre": "Rene Bridge",
+      "carrera": "Analista Programador",
+      "semestre": "4"
+    },
+    {
+      "id": 1008,
+      "nombre": "Junior Mbappe Bicicleta",
+      "carrera": "Analista Programador",
+      "semestre": "4"
+    }
+  ],
+  "Profesores": [
+    {
+      "id": 2001,
+      "nombre": "Chamakito"
+    },
+    {
+      "id": 2002,
+      "nombre": "Jordan 24"
+    }
+  ],
+  "users": [
+    {
+      "rol": "admin",
+      "correo": "pens@",
+      "nombre": "pens",
+      "contrasena": "1234",
+      "id": 1
+    },
+    {
+      "rol": "alumno",
+      "correo": "choripunk@",
+      "nombre": "choripunk",
+      "contrasena": "1234",
+      "id": 2
+    }
+  ]
+}

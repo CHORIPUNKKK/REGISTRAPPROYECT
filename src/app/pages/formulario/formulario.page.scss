@@ -1,0 +1,46 @@
+/* Archivo styles.css o estilos específicos para esta página */
+
+.registration-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  ion-content {
+    --ion-background-color: #f3f3f3; /* Cambia el color de fondo de la página */
+  }
+  
+  ion-item {
+    margin-bottom: 16px;
+  }
+  
+
+  
+  ion-text {
+    font-size: 14px;
+  }
+  
+  ion-button {
+    --ion-text-color: #fff; /* Color de texto del botón */
+    --ion-background-color: #007bff; /* Color de fondo del botón */
+    border-radius: 10px;
+  }
+  
+  .links-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .links-container a {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .links-container a:hover {
+    color: #0056b3;
+  }
+  

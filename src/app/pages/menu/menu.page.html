@@ -1,0 +1,103 @@
+<ion-header>
+  <ion-toolbar color="light">
+      <div class="titulo">Registr<span class="color-azul"></span></div>
+    <!-- Agrega el ícono de notificaciones a la derecha -->
+    <ion-buttons slot="end">
+      <ion-button (click)="openNotifications()">
+        <ion-icon name="notifications"></ion-icon>
+      </ion-button>
+      
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-menu side="end" contentId="main" menuId="notifications-menu">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Notificaciones</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-icon name="megaphone"></ion-icon>
+        <ion-label>
+          <h2>Anuncio a Profesores</h2>
+          <p>Reunión del departamento de Informática el próximo viernes a las 4 PM.</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="document"></ion-icon>
+        <ion-label>
+          <h2>Tarea Pendiente</h2>
+          <p>Recuerde revisar y calificar los proyectos de los estudiantes antes del fin de semana.</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="book"></ion-icon>
+        <ion-label>
+          <h2>Conferencia Magistral</h2>
+          <p>Imparta una conferencia sobre Inteligencia Artificial el lunes a las 11 AM en el salón 203.</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="alarm"></ion-icon>
+        <ion-label>
+          <h2>Recordatorio de Clase</h2>
+          <p>La clase de Programación Avanzada se llevará a cabo mañana a las 2 PM.</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="calendar"></ion-icon>
+        <ion-label>
+          <h2>Calendario Académico</h2>
+          <p>El próximo semestre comienza en dos semanas. Asegúrese de tener su plan de clases listo.</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="flag"></ion-icon>
+        <ion-label>
+          <h2>Proyecto de Investigación</h2>
+          <p>Los estudiantes han propuesto proyectos de investigación. Revíselos y proporcione comentarios.</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="main"></ion-router-outlet>
+
+<ion-content [fullscreen]="true" class="fondo">
+  <title>Menú</title>
+<body>
+    <div class="menu">
+        <h1>Bienvenido Docente</h1>
+        <div class="usuario" [routerLink]="['/user-profesor']">
+          <ion-icon name="person-sharp"></ion-icon>
+        </div>
+        
+        <div class="logout" (click)="irHome()">
+          <ion-icon name="log-out-sharp"></ion-icon>
+        </div>
+        <p style="font-size: 20px;">seleccione seccion</p>
+
+
+        <div class="opciones-imagen" (click)="irAListarAlumnos('PGY4121_004D')">
+          <img src="./../../../assets/img/opciones.webp" alt="Opciones" width="250" height="300"/>
+          <div class="texto-superpuesto">PGY4121_004D
+            PGY4121_008D
+            PGY4121_012D
+            PGY4121_001D</div>
+        </div>
+        
+      <!--<button id="generarQR" (click)="irAConectarDisp()">Generar Código QR</button>-->
+
+    </div>
+
+    
+</body>
+
+
+
+</ion-content>

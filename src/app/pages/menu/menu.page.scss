@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #fff; /* Texto en color blanco */
+  margin: 0;
+  padding: 0;
+  background-image: url('./../../../assets/img/wallp.jpg');
+  background-size: cover; /* La imagen se ajustará para cubrir completamente el elemento padre */
+  background-position: center; /* La imagen se centrará en el elemento padre */
+}
+
+
+.menu {
+  text-align: center;
+}
+
+h1 {
+  color: #cccccc;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 55px;
+}
+
+.opciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.opciones-imagen {
+  position: relative;
+  display: inline-block;
+}
+
+.texto-superpuesto {
+  position: absolute;
+  top: 48%; /* Ajusta la posición verticalmente según tus necesidades */
+  left: 55%; /* Ajusta la posición horizontalmente según tus necesidades */
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0); /* Color del texto */
+  font-size: 19px; /* Tamaño de fuente del texto */
+  padding: 5px 10px; /* Espaciado alrededor del texto */
+  border-radius: 5px; /* Bordes redondeados */
+  font-weight: bold;
+  line-height: 4;
+}
+
+.opcion {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #3498db; /* Fondo azul */
+  color: #fff; /* Texto en color blanco */
+  border: 2px solid #00526b; /* Borde azul oscuro */
+  border-radius: 10px; /* Bordes redondeados */
+  font-weight: bold; /* Texto en negrita */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transiciones suaves */
+}
+
+.opcion:hover {
+  background-color: #00526b; /* Cambia el fondo a un tono más oscuro de azul al pasar el cursor */
+  color: #fff; /* Cambia el texto a blanco al pasar el cursor */
+  border-color: #3498db; /* Borde vuelve a azul claro al pasar el cursor */
+}
+
+#generarQR {
+  background-color: #3498db; /* Fondo azul */
+  color: #fff; /* Texto en color blanco */
+  border: 2px solid #00526b; /* Borde azul oscuro */
+  border-radius: 20px; /* Bordes redondeados */
+  padding: 10px 20px;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px #00526b; /* Sombra en el texto */
+  font-weight: bold; /* Texto en negrita */
+}
+
+.logout {
+  position: absolute;
+  top: 10px; /* Ajusta la distancia desde la parte superior según tus preferencias */
+  right: 10px; /* Ajusta la distancia desde la derecha según tus preferencias */
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.usuario {
+  position: absolute;
+  top: 10px; /* Ajusta la distancia desde la parte superior según tus preferencias */
+  left: 10px; /* Ajusta la distancia desde la derecha según tus preferencias */
+  font-size: 35px;
+  color: #ffffff;
+}
+
+
+.titulo{
+  text-align: center;  
+  font-size: xx-large;
+  font-family: 'impact', Times, serif;
+  margin-bottom: 0px;
+  text-align: center; /* Centra el texto horizontalmente */
+  display: inline-block; /* Permite ajustar el margen izquierdo */
+  margin-left: 120px; /* Ajusta el margen izquierdo según tu preferencia */
+}
+
+.color-azul::after {
+  content: "APP";
+  color: #00526b; /* Cambia el color a azul o al color que desees */
+}
+

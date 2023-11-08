@@ -1,0 +1,24 @@
+
+.fondo{
+    --background: url('./../../../assets/img/fondo.jpg') 0/100% 100%;
+}
+.contenedor-logo{
+    margin-top: 150px;
+    
+}
+.contenedor-logo ion-img{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+
+.centrar-spinner {
+    display: flex;
+    flex-direction: column; /* Coloca el contenido en una columna */
+    justify-content: center; /* Centra vertical y horizontalmente */
+    align-items: center; /* Centra horizontalmente */
+    height: 100%; /* Opcional, para que el spinner ocupe todo el alto */
+    margin-top: -200px; /* Ajusta el margen superior según tu preferencia */
+  }
+  
+  

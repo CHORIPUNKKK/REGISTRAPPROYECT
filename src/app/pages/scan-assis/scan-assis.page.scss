@@ -1,0 +1,17 @@
+#imagenCamaraContainer {
+    z-index: 999;
+    display: none;
+  }
+  
+  #imagenCamaraCard {
+    text-align: center;
+  }
+  
+  #botonCerrar {
+    margin-top: 10px;
+  }
+
+  .invisible-button {
+    opacity: 0%; /* Hace que el botón sea invisible */
+    
+  }

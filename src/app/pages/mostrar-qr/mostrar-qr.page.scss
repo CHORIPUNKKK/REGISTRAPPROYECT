@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0; /* Fondo gris claro */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333; /* Texto negro */
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Sombra en la imagen */
+}
+
+p {
+    font-size: 20px;
+    color: #444; /* Texto gris oscuro */
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffbaba; /* Fondo azul */
+    color: rgb(0, 0, 0); /* Texto blanco */
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave en el color de fondo */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse */
+}
+
+.disconnect-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.disconnect-button .icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.titulo{
+    text-align: center;  
+    font-size: xx-large;
+    font-family: 'impact', Times, serif;
+    font-weight: 100;
+    margin-bottom: 0px;
+    text-align: center; /* Centra el texto horizontalmente */
+    display: inline-block; /* Permite ajustar el margen izquierdo */
+    margin-left: 0px; /* Ajusta el margen izquierdo según tu preferencia */
+  }
+  
+  .color-azul::after {
+    content: "APP";
+    color: #00526b; /* Cambia el color a azul o al color que desees */
+  }
+
+  .icon-container {
+    position: absolute;
+    top: 15px; /* Ajusta la posición vertical según tu preferencia */
+    left: 15px; /* Ajusta la posición horizontal según tu preferencia */
+    font-size: 35px;
+    color: black; /* Cambia el color del icono a negro o el que desees */
+}
+
+.hidden-input {
+    display: none;
+  }

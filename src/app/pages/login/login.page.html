@@ -1,0 +1,44 @@
+<ion-content [fullscreen]="true" class="fondo">
+
+  <div class="titulo">
+    <img src="./../../../assets/img/bienvenido.png" alt="Logo">
+  </div>
+    <div class="logo"></div>
+
+    <div class="contenedor-input verde">
+      <div>
+        <ion-icon name="person-sharp"></ion-icon>
+      </div>
+      <div style="margin-left: 10px;">
+        <ion-input [(ngModel)]="usuario" label="Ingresar Usuario" labelPlacement="floating" placeholder="Ingresar"></ion-input>
+      </div>
+    </div>
+    
+    <div class="contenedor-input azul">
+      <div>
+        <ion-icon name="lock-closed-sharp"></ion-icon>
+      </div>
+      <div style="margin-left: 10px;">
+        <ion-input [(ngModel)]="password" label="Ingresar Contraseña" type="password" labelPlacement="floating" placeholder="Ingresar"></ion-input>
+      </div>
+    </div>
+    
+    
+    <div style="margin: 15px;">
+      <ion-button expand="block" color="light" (click)="irMenu()">Iniciar Sesión</ion-button>
+    </div>
+    
+    <a (click)="irRegistrar()">Restablecer Contraseña</a>
+   
+    <div class="links-container">
+      <a (click)="IrFormulario()" style="cursor: pointer;">Registrarse</a>
+    </div>
+    
+
+
+
+</ion-content>
+
+<ion-footer>
+
+</ion-footer>

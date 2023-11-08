@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registrar Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="registration-container">
+    <form #signupForm="ngForm" (ngSubmit)="submitForm(signupForm)">
+      <ion-item>
+        <ion-label position="floating">Correo electrónico</ion-label>
+        <ion-input type="email" name="email" ngModel required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"></ion-input>
+      </ion-item>
+      
+
+      <ion-item>
+        <ion-label position="floating">Nombre de usuario</ion-label>
+        <ion-input type="text" name="nombre" ngModel required></ion-input>
+      </ion-item> 
+
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" name="contrasena" ngModel required #contrasena="ngModel"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Repetir contraseña</ion-label>
+        <ion-input type="password" name="confirmPassword" ngModel required pattern="{{contrasena.value}}"></ion-input>
+      </ion-item>
+      
+      <ion-text color="danger" *ngIf="signupForm.hasError('pattern', 'confirmPassword')">
+        Las contraseñas no coinciden.
+      </ion-text>
+      
+
+      <ion-button expand="full" (click)="submitForm(signupForm)">Registrarse</ion-button>
+    </form>
+    <div class="links-container">
+      <a (click)="tengoCuenta()" style="font-weight: bold;">Ya tengo una cuenta</a>
+    </div>
+  </div>
+</ion-content>

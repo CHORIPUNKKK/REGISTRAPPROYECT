@@ -1,0 +1,129 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff; /* Texto en color blanco */
+    margin: 0;
+    padding: 0;
+    background-image: url('./../../../assets/img/wallp.jpg');
+    background-size: cover; /* La imagen se ajustará para cubrir completamente el elemento padre */
+    background-position: center; /* La imagen se centrará en el elemento padre */
+}
+
+
+.menu {
+    text-align: center;
+}
+
+h1 {
+    color: #cccccc;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 55px;
+}
+
+.opciones {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.opcion {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#generarQR {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px; /* Bordes redondos */
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#generarQR:hover {
+    background-color: #eee; /* Cambiar color de fondo al pasar el cursor */
+}
+
+#portaldc {
+    background-color: rgb(0, 50, 126);
+    border: 2px solid black;
+    border-radius: 20px; /* Bordes redondos */
+    color: rgb(190, 204, 0);
+    padding: 10px 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 160px;
+    left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+
+
+.logout {
+    position: absolute;
+    top: 10px; /* Ajusta la distancia desde la parte superior según tus preferencias */
+    right: 10px; /* Ajusta la distancia desde la derecha según tus preferencias */
+    font-size: 35px;
+}
+
+.usuario {
+    position: absolute;
+    top: 10px; /* Ajusta la distancia desde la parte superior según tus preferencias */
+    left: 10px; /* Ajusta la distancia desde la derecha según tus preferencias */
+    font-size: 35px;
+}
+
+
+.titulo{
+    text-align: center;  
+    font-size: xx-large;
+    font-family: 'impact', Times, serif;
+    margin-bottom: 0px;
+    text-align: center; /* Centra el texto horizontalmente */
+    display: inline-block; /* Permite ajustar el margen izquierdo */
+    margin-left: 120px; /* Ajusta el margen izquierdo según tu preferencia */
+  }
+  
+  .color-azul::after {
+    content: "APP";
+    color: #00526b; /* Cambia el color a azul o al color que desees */
+  }
+
+  
+
+  .fondo-pie {
+  background-color: #333;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cuadro {
+  padding: 15px;
+}
+
+.icono {
+  font-size: 60px; /* Tamaño del ícono */
+  color: #f7931e; /* Color del ícono */
+  border: 2px solid #f7931e; /* Borde del círculo */
+  border-radius: 50%; /* Hace que el ícono esté dentro de un círculo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.icono:hover {
+  transform: scale(1.1);
+  border-color: #f00;
+}
+
+  

@@ -1,0 +1,89 @@
+.fondo{
+  --background: linear-gradient(180deg, #000, #000, #333, #333);
+}
+.fondo-header{
+    background-color: bisque;
+    opacity: 0.4;
+}
+.titulo{
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+
+.salu2 {
+    font-family: 'Impact', sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+
+.logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+  border: 2px solid #ffffff; /* Borde amarillo de 4 píxeles */
+  background: url('../../../assets/img/login.png') center/contain;
+}
+
+.contenedor-input{
+    background-color: rgb(234, 197, 197);
+    margin: 15px;padding: 10px;display: flex;
+}
+.contenedor-input img{
+    width: 40px;border-radius: 50%;border: solid 1px black;
+}
+
+ion-icon {
+    font-size: 38px; /* Ajusta el tamaño según tus preferencias */
+    color: black;
+}
+
+
+
+
+
+.verde {
+    background-color: #dadada; /* Color verde de fondo */
+    color: rgb(122, 115, 115); /* Texto en color blanco */
+  }
+  
+  .azul {
+    background-color: #dadada; /* Color azul de fondo */
+    color: rgb(122, 115, 115); /* Texto en color blanco */
+  }
+  
+  .verde .ion-icon {
+    color: #4CAF50; /* Color del icono verde */
+  }
+  
+  .azul .ion-icon {
+    color: #3498db; /* Color del icono azul */
+  }
+  
+  .verde ion-button {
+    --background: #4CAF50; /* Color de fondo del botón */
+  }
+  
+  .azul ion-button {
+    --background: #3498db; /* Color de fondo del botón */
+  }
+  
+
+  a {
+    color: #3498db; /* Color azul */
+    text-decoration: underline; /* Subrayado predeterminado */
+    display: block; /* Convertir en bloque para centrar horizontalmente */
+    text-align: center; /* Centrar el texto horizontalmente */
+    transition: color 0.3s; /* Transición de color al pasar el cursor */
+  }
+  
+  a:hover {
+    color: #00379c; /* Cambio de color al pasar el cursor */
+  }
+  

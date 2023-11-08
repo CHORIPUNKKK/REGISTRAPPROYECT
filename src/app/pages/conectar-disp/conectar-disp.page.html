@@ -1,0 +1,75 @@
+<ion-content [fullscreen]="true">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+</head>
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-title>
+      <div class="titulo">Registr<span class="color-azul"></span></div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<body>
+  <div class="icon-container" (click)="irMenu()">
+    <ion-icon name="arrow-back-sharp"></ion-icon>
+</div>
+  <div class="letra">
+    <p>Para continuar elige si deseas <span class="azul">CONECTAR</span> a un dispositivo</p>
+</div>
+
+
+<div class="main-content">
+  <div class="option" (click)="mostrarDispositivos = !mostrarDispositivos">
+    <img src="./../../../assets/img/pc.png" alt="Foto 1">
+    <p>Dispositivo Externo (Windows, Mac)</p>
+  </div>
+
+  <!-- Aquí se muestra o se oculta la lista de dispositivos -->
+  <div *ngIf="mostrarDispositivos" class="dispositivos-card">
+    <h2>Buscando Dispositivos</h2>
+    <!-- Animación de puntos -->
+    <div class="buscando-animation">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <ul>
+      <li>
+        <ion-icon name="desktop-outline"></ion-icon>
+        <span class="dispositivo-nombre">DESKTOPH345</span>
+      </li>
+      <li>
+        <ion-icon name="laptop-outline"></ion-icon>
+        <span class="dispositivo-nombre">LaptopHdP</span>
+      </li>
+      <li>
+        <ion-icon name="tablet-portrait-outline"></ion-icon>
+        <span class="dispositivo-nombre">TabletdeMauricio</span>
+      </li>
+      <li>
+        <ion-icon name="phone-portrait-outline"></ion-icon>
+        <span class="dispositivo-nombre">ñanñun s9+</span>
+      </li>
+      <li>
+        <ion-icon name="tv-outline"></ion-icon>
+        <span class="dispositivo-nombre">Smart WebOS</span>
+      </li>
+      <!-- Agrega más dispositivos según sea necesario -->
+    </ul>
+  </div>
+  
+  
+  
+</div>
+
+
+
+        <div class="option" (click)="irMostrarQr()">
+            <img src="./../../../assets/img/celu.png" alt="Foto 2">
+            <p>Seguir con mi Dispositivo</p>
+        </div>
+    
+</body>
+</ion-content>

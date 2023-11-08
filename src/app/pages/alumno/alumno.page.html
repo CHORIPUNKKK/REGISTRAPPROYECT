@@ -1,0 +1,114 @@
+<ion-header>
+  <ion-toolbar color="light">
+      <div class="titulo">Registr<span class="color-azul"></span></div>
+    <!-- Agrega el ícono de notificaciones a la derecha -->
+    <ion-buttons slot="end">
+      <ion-button (click)="openNotifications()">
+        <ion-icon name="notifications"></ion-icon>
+      </ion-button>
+      
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-menu side="end" contentId="main" menuId="notifications-menu">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Notificaciones</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-icon name="megaphone"></ion-icon>
+        <ion-label>
+          <h2>Anuncio Importante</h2>
+          <p>¡Nueva asignatura de Inteligencia Artificial disponible!</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="document"></ion-icon>
+        <ion-label>
+          <h2>Tarea Pendiente</h2>
+          <p>Recuerda entregar el proyecto de Programación Web mañana.</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="book"></ion-icon>
+        <ion-label>
+          <h2>Evento Académico</h2>
+          <p>Charla sobre Ciberseguridad el próximo viernes a las 3 PM en el auditorio.</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-icon name="megaphone"></ion-icon>
+        <ion-label>
+          <h2>Anuncio Importante</h2>
+          <p>¡Nueva asignatura de Redes de Computadoras disponible!</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="document"></ion-icon>
+        <ion-label>
+          <h2>Recordatorio</h2>
+          <p>La fecha límite para la inscripción de cursos del próximo semestre es el viernes.</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="book"></ion-icon>
+        <ion-label>
+          <h2>Evento de Software</h2>
+          <p>Conferencia sobre Desarrollo Ágil de Software el martes a las 2 PM en el auditorio.</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="alarm"></ion-icon>
+        <ion-label>
+          <h2>Prueba Importante</h2>
+          <p>Recuerda que el examen de Algoritmos y Estructuras de Datos es este jueves a las 10 AM.</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="main"></ion-router-outlet>
+
+<ion-content [fullscreen]="true" class="fondo">
+  <title>Menú</title>
+<body>
+    <div class="menu">
+        <h1>Bienvenido Alumno</h1>
+        <div class="usuario" (click)="irUser()">
+          <ion-icon name="person-sharp"></ion-icon>
+        </div>
+        <div class="logout" (click)="irHome()">
+          <ion-icon name="log-out-sharp"></ion-icon>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img src="./../../../assets/img/QR.png" alt="QR Code" style="width: 250px; height: 250px;">
+        <br>
+        <br>
+        <br>
+        <br>
+ 
+        <a (click)="irScanAssis()">
+          <button id="generarQR">Escanear Código QR</button>
+        </a>
+              
+    </div>
+
+</body>
+
+
+
+</ion-content>
+<ion-footer>
+  <app-pie></app-pie>
+</ion-footer>

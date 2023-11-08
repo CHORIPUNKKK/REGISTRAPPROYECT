@@ -1,0 +1,33 @@
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar color="light">
+      <ion-title>
+        <div class="titulo">Registr<span class="color-azul"></span></div>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Código QR Generado con Éxito</title>
+</head>
+<body>
+  <div class="icon-container" (click)="irAConectarDisp()">
+    <ion-icon name="arrow-back-sharp"></ion-icon>
+</div>
+    <h1>Código QR Generado con Éxito!</h1>
+    <br>
+    <br>
+    <br>
+    <input type="text" [(ngModel)]="texto" class="hidden-input">
+<qrcode [qrdata]="texto" [width]="400" style="display: block;"></qrcode>
+
+    <!--<img src="./../../../assets/img/ejemplo2.png" alt="Código QR">-->
+    <p>TRANSMITIENDO A: MyLaptop2170</p>
+    <br>
+    <div class="disconnect-button">
+        <button class="button" (click)="irMenu()">Desconectar ❌</button>
+    </div>
+    
+</body>
+</ion-content>

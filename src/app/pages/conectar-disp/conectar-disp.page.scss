@@ -1,0 +1,158 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.option {
+    margin: 20px;
+}
+
+.option img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.option p {
+    font-size: 1.5rem;
+}
+
+.titulo{
+    text-align: center;  
+    font-size: xx-large;
+    font-family: 'impact', Times, serif;
+    font-weight: 100;
+    margin-bottom: 0px;
+    text-align: center; /* Centra el texto horizontalmente */
+    display: inline-block; /* Permite ajustar el margen izquierdo */
+    margin-left: 0px; /* Ajusta el margen izquierdo según tu preferencia */
+  }
+  
+  .color-azul::after {
+    content: "APP";
+    color: #00526b; /* Cambia el color a azul o al color que desees */
+  }
+
+.letra {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.azul {
+    color: rgb(0, 2, 139); /* Cambia el color a azul o al tono de azul deseado */
+}
+
+.icon-container {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-size: 35px;
+}
+
+
+@keyframes slideToLeft {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideFromRight {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  ion-router-outlet {
+    &.menu {
+      animation: 0.3s slideToLeft ease-out; // Anima hacia la izquierda al entrar en "menu"
+    }
+    &.menu ~ ion-router-outlet {
+      animation: 0.3s slideFromRight ease-out; // Anima hacia la izquierda al salir de "menu"
+    }
+  }
+  
+
+/* Estilos para la lista de dispositivos */
+.dispositivos-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  position: absolute;
+  top: 70px; /* Ajusta la posición vertical según tu diseño */
+  left: 10px; /* Ajusta la posición horizontal según tu diseño */
+  z-index: 1000; /* Ajusta el valor según sea necesario para que esté por encima del contenido */
+}
+
+.dispositivos-card h2 {
+  font-weight: bold; /* Letras en negritas */
+}
+
+.dispositivos-card ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0;
+}
+
+.dispositivos-card li {
+  display: flex; /* Muestra los elementos en una fila */
+  align-items: center; /* Centra verticalmente los elementos */
+  margin-bottom: 10px;
+}
+
+.dispositivos-card ion-icon {
+  font-size: 24px; /* Tamaño del ícono */
+  margin-right: 10px;
+}
+
+.dispositivos-card .dispositivo-nombre {
+  font-weight: bold; /* Letras en negritas para el nombre del dispositivo */
+}
+
+
+/* Animación de puntos */
+.buscando-animation {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dot {
+  display: inline-block;
+  margin: 0 4px;
+  width: 10px;
+  height: 10px;
+  background-color: #333; /* Color de los puntos */
+  border-radius: 50%;
+  animation: pulse 5s infinite; /* Animación llamada "pulse" durante 1 segundo, repetida infinitamente */
+}
+
+@keyframes pulse {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    transform: scale(1);
+    opacity: 0.5; /* Opacidad de los puntos */
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: scale(1.2);
+    opacity: 1; /* Opacidad de los puntos */
+  }
+}

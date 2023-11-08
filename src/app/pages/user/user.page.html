@@ -1,0 +1,46 @@
+<ion-content [fullscreen]="true" class="fondo">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perfil del Alumno</title>
+    </head>
+    <body>
+        <div class="perfil-container">
+            <div class="icon-container" (click)="irAlumno()">
+                <ion-icon name="arrow-back-sharp"></ion-icon>
+            </div>
+            <div class="nombre">Patan Rodriguez</div>
+            <div class="info">
+                <label>Carrera*</label>
+                <p class="editable"><input type="text" value="Analista Programador" readonly></p>
+            </div>
+            <div class="info">
+                <label>Semestre*</label>
+                <p class="editable"><input type="number" value="4" readonly></p>
+            </div>
+            <div class="info">
+                <label>Correo Electrónico</label>
+                <p class="editable"><input type="email" value="juan.perez@example.com" readonly></p>
+            </div>
+            <div class="info">
+                <label>Teléfono</label>
+                <p class="editable"><input type="tel" value="+123 456 789" readonly></p>
+            </div>
+            <div class="info">
+                <label>semestre</label>
+                <p class="editable"><input type="text" value="Ciudad Universitaria, Informática Building" readonly></p>
+            </div>
+            <button class="editar-btn" onclick="habilitarEdicion()">Editar</button>
+        </div>
+    
+        <script>
+            function habilitarEdicion() {
+                const editableElements = document.querySelectorAll('.editable input');
+                editableElements.forEach(input => {
+                    input.removeAttribute('readonly');
+                });
+            }
+        </script>
+    </body>
+</ion-content>

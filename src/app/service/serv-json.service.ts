@@ -10,7 +10,7 @@ import { User } from '../models/models.module';
   providedIn: 'root'
 })
 export class ServJSONService {
-  private url = 'http://localhost:3000';
+  private url = 'https://server-registrapp.onrender.com';
   constructor(private http: HttpClient) { }
 
   agregar(data: any) {

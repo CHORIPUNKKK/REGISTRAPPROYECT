@@ -5,9 +5,9 @@
 export const environment = {
   production: false,
   api: {
-    Alumnos: 'http://localhost:3000/Alumnos',
-    Profesores: 'http://localhost:3000/Profesores',
-    Administradores: 'http://localhost:3000/Administradores'
+    Alumnos: 'https://server-registrapp.onrender.com/Alumnos',
+    Profesores: 'https://server-registrapp.onrender.com/Profesores',
+    Administradores: 'https://server-registrapp.onrender.com/Administradores'
   }
 };
 
